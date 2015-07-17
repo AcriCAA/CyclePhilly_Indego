@@ -16,7 +16,7 @@
 
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiYWNyaWNhYSIsImEiOiJjZWJhNTk4YzFiODZmNTdlZDg5ZGE3NTFhZmI2ZmUwOSJ9.haw7ETdkg_W2acjYWgZ9Rg';
-var map = L.mapbox.map('map', 'mapbox.light')
+var map = L.mapbox.map('map', 'acricaa.bdedf46e')
     .setView([39.944, -75.167], 14);
 
 
@@ -28,9 +28,6 @@ var featureLayer = L.mapbox.featureLayer()
     .loadURL('https://api.phila.gov/bike-share-stations/v1')
     .addTo(map);
 
-    var featureLayer2 = L.mapbox.featureLayer()
-    .loadURL("http://acricaa.github.io/CyclePhilly_Indego/trips.geojson")
-    .addTo(map);
 </script>
 </body>
 </html>
