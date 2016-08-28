@@ -25,9 +25,9 @@ var map = L.mapbox.map('map','mapbox.light,acricaa.bdedf46e')
 // So the CSV file must be on the same domain as the Javascript, or the server
 // delivering it should support CORS.
 var featureLayer = L.mapbox.featureLayer()
-	.loadURL('https://www.rideindego.com/stations/json')
+	
     .addTo(map);
-
+featureLayer.loadURL('https://www.rideindego.com/stations/json');
 </script>
 </body>
 </html>
