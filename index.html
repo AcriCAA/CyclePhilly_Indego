@@ -24,18 +24,18 @@ var map = L.mapbox.map('map','mapbox.light,acricaa.bdedf46e')
 // http://en.wikipedia.org/wiki/Same_origin_policy
 // So the CSV file must be on the same domain as the Javascript, or the server
 // delivering it should support CORS.
-var featureLayer = L.mapbox.featureLayer()
+// var featureLayer = L.mapbox.featureLayer()
 
-    .addTo(map);
-featureLayer.loadURL('https://www.rideindego.com/stations/json/');
+//     .addTo(map);
+// featureLayer.loadURL('https://www.rideindego.com/stations/json/');
 
 // var featureLayer = L.mapbox.featureLayer("stations082016.json")
 //     .addTo(map);
 
-// var featureLayer = L.mapbox.featureLayer()
-//     .addTo(map);
+var featureLayer = L.mapbox.featureLayer()
+    .addTo(map);
 
-// featureLayer.loadURL('http://wibco.tech/datasets/stations082016.geojson');
+featureLayer.loadURL('http://wibco.tech/datasets/stations082016.geojson');
 </script>
 </body>
 </html>
