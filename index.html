@@ -29,8 +29,13 @@ var map = L.mapbox.map('map','mapbox.light,acricaa.bdedf46e')
 //     .addTo(map);
 // featureLayer.loadURL('https://www.rideindego.com/stations/json/');
 
-var featureLayer = L.mapbox.featureLayer("stations082016.json")
+// var featureLayer = L.mapbox.featureLayer("stations082016.json")
+//     .addTo(map);
+
+var featureLayer = L.mapbox.featureLayer()
     .addTo(map);
+
+featureLayer.loadURL('stations082016.geojson');
 </script>
 </body>
 </html>
